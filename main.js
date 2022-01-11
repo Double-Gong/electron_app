@@ -3,6 +3,8 @@
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const reloader= require('electron-reloader')
+reloader(module)
 
 function createWindow () {
   // 创建浏览器窗口
